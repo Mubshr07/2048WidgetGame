@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>580</width>
+    <height>709</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>26</pointsize>
+          <weight>93</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 750 26pt &quot;MS Shell Dlg 2&quot;;
+text-decoration:underline;
+color: rgb(255, 255, 255);
+padding-left:10px;</string>
+        </property>
+        <property name="text">
+         <string>2048Game</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Preferred</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>10</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Score :</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lbl_YourScores">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="lbl_0_0">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px;
+border: 1px solid rgb(170, 255, 255);
+background-color: rgb(162, 134, 157);
+font: 750 24pt &quot;MS Shell Dlg 2&quot;;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="lbl_1_1">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px;
+border: 1px solid rgb(170, 255, 255);
+background-color: rgb(162, 134, 157);
+font: 750 24pt &quot;MS Shell Dlg 2&quot;;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="lbl_1_3">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px;
+border: 1px solid rgb(170, 255, 255);
+background-color: rgb(162, 134, 157);
+font: 750 24pt &quot;MS Shell Dlg 2&quot;;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="lbl_0_2">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px;
+border: 1px solid rgb(170, 255, 255);
+background-color:  rgb(170, 255, 255);
+font: 750 24pt &quot;MS Shell Dlg 2&quot;;
+border-radius:8px;
+color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>2</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="lbl_0_1">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px;
+border: 1px solid rgb(170, 255, 255);
+background-color: rgb(162, 134, 157);
+font: 750 24pt &quot;MS Shell Dlg 2&quot;;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="lbl_1_2">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px;
+border: 1px solid rgb(170, 255, 255);
+background-color: rgb(162, 134, 157);
+font: 750 24pt &quot;MS Shell Dlg 2&quot;;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="lbl_0_3">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px; border: 1px solid rgb(170, 255, 255); background-color:  rgb(170, 178, 255); font: 750 24pt 'MS Shell Dlg 2'; border-radius:8px; color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>4</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="lbl_1_0">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px;
+border: 1px solid rgb(170, 255, 255);
+background-color: rgb(162, 134, 157);
+font: 750 24pt &quot;MS Shell Dlg 2&quot;;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="lbl_3_0">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px;
+border: 1px solid rgb(170, 255, 255);
+background-color: rgb(162, 134, 157);
+font: 750 24pt &quot;MS Shell Dlg 2&quot;;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lbl_2_0">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px;
+border: 1px solid rgb(170, 255, 255);
+background-color: rgb(162, 134, 157);
+font: 750 24pt &quot;MS Shell Dlg 2&quot;;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="lbl_2_1">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px;
+border: 1px solid rgb(170, 255, 255);
+background-color: rgb(162, 134, 157);
+font: 750 24pt &quot;MS Shell Dlg 2&quot;;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="lbl_2_2">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px;
+border: 1px solid rgb(170, 255, 255);
+background-color: rgb(162, 134, 157);
+font: 750 24pt &quot;MS Shell Dlg 2&quot;;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLabel" name="lbl_2_3">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px;
+border: 1px solid rgb(170, 255, 255);
+background-color: rgb(162, 134, 157);
+font: 750 24pt &quot;MS Shell Dlg 2&quot;;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLabel" name="lbl_3_1">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px;
+border: 1px solid rgb(170, 255, 255);
+background-color: rgb(162, 134, 157);
+font: 750 24pt &quot;MS Shell Dlg 2&quot;;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLabel" name="lbl_3_2">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px;
+border: 1px solid rgb(170, 255, 255);
+background-color: rgb(162, 134, 157);
+font: 750 24pt &quot;MS Shell Dlg 2&quot;;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QLabel" name="lbl_3_3">
+           <property name="minimumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>117</width>
+             <height>109</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">margin:2px;
+border: 1px solid rgb(170, 255, 255);
+background-color: rgb(162, 134, 157);
+font: 750 24pt &quot;MS Shell Dlg 2&quot;;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;HOW TO PLAY:&lt;/span&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt; Use your arrow keys to move the tiles. When two tiles with the same number touch, they merge into one!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>580</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuNew_Game">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionName_Game"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuNew_Game"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionName_Game">
+   <property name="text">
+    <string>Name Game</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
